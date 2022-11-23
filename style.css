@@ -1,0 +1,115 @@
+:root {
+  --body-background: #0e0e0e;
+  --color-logo: #ff5b50;
+  --card-color: #252525;
+  --text-color: #fff;
+  --subtitle-color: #5a5757;
+  --black-text: #000;
+  --color-input: #0D0D0D;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+ul,
+li,
+a {
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color:inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Ultilitarios */
+.destaque {
+  color:var(--color-logo);
+}
+
+/* Header */
+
+.bg-principal {
+  background: url("./assets/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  min-height: 100vh;
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 20px 80px 20px;
+}
+
+.cabecalho h1 {
+  padding-right: 20px;
+}
+
+.cabecalho ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cabecalho li > a {
+  display: block;
+  padding:12px 0;
+  margin-right: 60px;
+}
+
+.cabecalho > a {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: red;
+}
+
+/* Container principal*/
+.container-principal {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 20px;
+}
+
+.conteudo-principal {
+  display: grid;
+  grid-template-columns: 400px 1fr auto;
+}
+
+.conteudo-principal-texto p {
+  max-width: 33ch;
+  margin-bottom: 40px;
+}
+
+.artistas-info {
+  display:flex;
+  align-items: flex-end;
+}
+
+.artistas-info p {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.conteudo-principal h1 {
+  font-size:3rem;
+  justify-self: center;
+}
+
+
