@@ -37,6 +37,19 @@ img {
   color:var(--color-logo);
 }
 
+.badge {
+  animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 /* Header */
 
 .bg-principal {
@@ -58,12 +71,14 @@ img {
 
 .cabecalho h1 {
   padding-right: 20px;
+  color:var(--text-color)
 }
 
 .cabecalho ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  color:var(--text-color)
 }
 
 .cabecalho li > a {
@@ -76,7 +91,8 @@ img {
   display: flex;
   align-items: center;
   padding: 10px 15px;
-  background: red;
+  font-weight: bold;
+  background: var(--text-color);
 }
 
 /* Container principal*/
@@ -89,11 +105,13 @@ img {
 .conteudo-principal {
   display: grid;
   grid-template-columns: 400px 1fr auto;
+  margin-bottom: 100px;
 }
 
 .conteudo-principal-texto p {
   max-width: 33ch;
   margin-bottom: 40px;
+  color:var(--text-color);
 }
 
 .artistas-info {
@@ -110,6 +128,22 @@ img {
 .conteudo-principal h1 {
   font-size:3rem;
   justify-self: center;
+  color:var(--text-color)
+}
+
+.container-galeria ul{
+  display: grid;
+  grid-template-columns: repeat(4,minmax(385px,auto));
+  gap: 60px 15px;
+  overflow-x: auto;
+}
+
+.container-galeria li {
+  border: 1px solid var(--text-color);
+}
+
+.container-galeria li img {
+  width: 100%;
 }
 
 
